@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>条件组合查询</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!--[if lt IE 9]>
+        <script src="js/vendor/html5shiv.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="ux-select-box">
+            <!-- 筛选条件 -->
+            <div class="ux-select-result ux-clear">
+                <div class="ux-flex-box ux-clear">
+                    <div class="ux-flex-left">
+                        <div class="select-title">您已选择</div>
+                    </div>
+                    <div class="ux-flex-right">
+                        <dl>
+                            <dd class="select-no">不限</dd>
+                            <dd class="del-select">全部清除</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <ul class="ux-select-list">
+                <li class="ux-select-item ux-clear">
+                    <div class="ux-box ux-clear">
+                        <div class="ux-left">
+                            <div class="select-title">所在地</div>
+                        </div>
+                        <div class="ux-left">
+                            <div class="ux-box ux-clear">
+                                <div class="ux-left">
+                                    <div class="select-all selected" data-name="district" data-item="select1item0">
+                                        <span>不限</span></div>
+                                </div>
+                                <div class="ux-left">
+                                    <dl id="select1">
+                                        <dd data-name="distric" data-city="011" data-item="select1item1"><span>北京</span></dd>
+                                        <dd data-name="distr" data-city="022" data-item="select1item2"><span>上海</span></dd>
+                                        <dd data-name="dis" data-city="033" data-item="select1item3"><span>南京</span></dd>
+                                        <dd data-name="distric" data-city="011" data-item="select1item1"><span>北京</span></dd>
+                                        <dd data-name="distr" data-city="022" data-item="select1item2"><span>上海</span></dd>
+                                        <dd data-name="dis" data-city="033" data-item="select1item3"><span>南京</span></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ux-select-item ux-clear">
+                    <div class="ux-box ux-clear">
+                        <div class="ux-left">
+                            <div class="select-title">牌照地</div>
+                        </div>
+                        <div class="ux-left">
+                            <div class="ux-box ux-clear">
+                                <div class="ux-left">
+                                    <div class="select-all selected" data-name="license" data-item="select4item0">
+                                        <span>不限</span></div>
+                                </div>
+                                <div class="ux-left">
+                                    <dl id="select4">
+                                        <dd data-name="license" data-item="select4item1"><span>京</span></dd>
+                                        <dd data-name="license" data-item="select4item2"><span>沪</span></dd>
+                                        <dd data-name="license" data-item="select4item3"><span>鲁</span></dd>
+                                        <dd data-name="license" data-item="select4item4"><span>苏</span></dd>
+                                        <dd data-name="license" data-item="select4item5"><span>浙</span></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ux-select-item ux-clear">
+                    <div class="ux-box ux-clear">
+                        <div class="ux-left">
+                            <div class="select-title">竞价方式</div>
+                        </div>
+                        <div class="ux-left">
+                            <div class="ux-box ux-clear">
+                                <div class="ux-left">
+                                    <div class="select-all selected" data-name="bidding" data-item="select5item0">
+                                        <span>不限</span></div>
+                                </div>
+                                <div class="ux-left">
+                                    <dl id="select5">
+                                        <dd class="bidding-type" data-name="bidding" data-item="select5item1"><span>明拍</span>
+                                        </dd>
+                                        <dd class="bidding-type" data-name="bidding" data-item="select5item2"><span>暗拍</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="js/vendor/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="js/jquery.multi-query.js"></script>
+    </body>
+</html>

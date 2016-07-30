@@ -1,0 +1,338 @@
+/**
+ * @name: index [index.css]
+ * @author: 二手车事业部 前端组
+ * @description:
+ */
+
+body {
+    font: 12px/1.5 '\5fae\8f6f\96c5\9ed1', '\5b8b\4f53', 'Hiragino Sans GB', tahoma, arial;
+}
+
+/* 清理浮动 */
+.ux-clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.ux-clear {
+    zoom: 1; /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+html body .ux-hide {
+    display: none;
+}
+
+/* 设置内联, 减少浮动带来的bug */
+.ux-left, .ux-right {
+    display: inline;
+}
+
+.ux-left {
+    float: left;
+}
+
+.ux-right {
+    float: right;
+}
+
+.ux-flex-box {
+    margin: 0 auto;
+}
+
+.ux-flex-left {
+    float: left;
+    display: inline;
+}
+
+.ux-flex-right {
+    float: left;
+    display: inline;
+}
+
+.ux-select-box {
+    border: 1px solid #eee;
+    border-top: none;
+    padding-top: 4px;
+    color: #7e7b7b;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.ux-no-border {
+    border: 0 none;
+}
+
+.ux-no-border dl dt {
+    width: 60px;
+}
+
+.ux-no-border .ux-select-item dd {
+    /*width:auto;*/
+}
+
+.ux-select-box dl,
+.ux-select-box dt,
+.ux-select-box dd {
+    float: left;
+    display: inline;
+
+}
+
+.ux-select-box .select-title {
+    padding: 8px 5px;
+    color: #7e7b7b;
+    width: 58px;
+    text-align: right;
+}
+
+.ux-select-list dt {
+    width: 60px;
+    padding: 5px;
+}
+
+.ux-select-box dd {
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ux-select-list {
+    padding: 10px 10px 0 10px;
+}
+
+.ux-select-list .ux-select-item {
+    padding: 10px 0;
+}
+
+.ux-select-list .ux-select-last {
+    display: none;
+}
+
+.ux-select-list .ux-select-item dt {
+    font-size: 14px;
+    color: #000;
+    text-align: right;
+}
+
+.ux-select-item dd {
+    padding: 6px 20px;
+    border: 1px solid #e2e2e2;
+    color: #666666;
+}
+
+.ux-select-item .select-all {
+    margin-left: 10px;
+    margin-right: 5px;
+    padding: 6px;
+    width: 60px;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.ux-select-item .ux-brand-list {
+    margin-left: 10px;
+}
+
+.ux-select-item .ux-brand-box {
+    padding: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.ux-select-item .brand-grid {
+    width: 800px;
+}
+
+.ux-select-item .brand-grid img {
+    border: 0 none;
+    padding-right: 5px;
+}
+
+.ux-select-item .series-grid {
+    border: 1px solid #1999dd;
+    *margin-top: 10px;
+    padding: 10px;
+    width: 770px;
+    display: none;
+}
+
+.ux-select-item .ux-series-header {
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding: 0 5px 5px;
+    border-bottom: 1px solid #eee;
+    height: 30px;
+    line-height: 30px;
+}
+
+.ux-select-item .ux-series-header span {
+    float: left;
+    display: inline;
+}
+
+.ux-select-item .ux-series-header span.ux-shutdown-btn {
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: right;
+    margin: 5px 5px 0 0;
+    background: url("../image/shutdown-x.png") 0 0 no-repeat transparent;
+    font-size: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.ux-select-item .selected {
+    border: 1px solid #3e98ff;
+    color: #3e98ff;
+    text-align: center;
+    background-color: #fff;
+}
+
+.brand-option-list {
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.brand-grid .brand-option-list .selected {
+    border: 1px solid #3e98ff;
+}
+
+.series-grid .brand-option-list .selected {
+    color: #1999dd;
+    border: 1px solid #3e98ff;
+}
+
+.series-grid .brand-option-list .brand-option-item {
+    border: none;
+    padding: 6px;
+    margin-right: 5px;
+    margin-bottom: 0;
+}
+
+.brand-option-list .brand-option-item {
+    color: #666;
+    cursor: pointer;
+    float: left;
+    border: 1px solid #e2e2e2;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 5px 8px 5px 5px;
+}
+
+.ux-select-item .ux-box dl {
+    width: 760px;
+}
+
+.ux-select-item .ux-box dl dd {
+    margin-bottom: 3px;
+}
+
+.ux-select-item .ux-box dl.select-dl {
+    width: auto;
+    max-width: 720px;
+}
+
+.ux-select-item .ux-box dl.select-dl dd {
+    margin-bottom: 0;
+}
+
+.ux-select-result {
+    border-bottom: 1px solid #eee;
+    background-color: #ececec;
+    padding: 0 10px 5px 10px;
+}
+
+.ux-select-result .select-title {
+    margin-top: 6px;
+    padding: 6px 5px 3px 5px;
+}
+
+.ux-select-result .select-no {
+    border: 1px solid #3e98ff;
+    color: #1f9bde;
+    text-align: center;
+    line-height: 25px;
+    width: 68px;
+    padding: 2px 2px 1px 2px;
+    background-color: #fff;
+}
+
+.ux-select-result dl {
+    margin-top: 7px;
+    width: 900px;
+}
+
+.ux-select-result dd {
+    float: left;
+    display: inline;
+    margin-bottom: 4px;
+}
+
+.ux-select-result dd.select-type {
+    display: none;
+}
+
+.ux-select-box .select-dl {
+    border: 1px solid #e2e2e2;
+    padding: 0 5px;
+    margin-left: 10px;
+}
+
+.ux-select-result .selected {
+    border: 1px solid #94ceec;
+    color: #1f9bde;
+    text-align: center;
+    line-height: 25px;
+    padding: 2px 10px 1px 0;
+    background-color: #fff;
+}
+
+.ux-select-box .select-dl dd {
+    border: none;
+    padding: 3px 0 3px 0;
+    margin: 0;
+    width: 70px;
+}
+
+.ux-select-box .select-dl em {
+    display: block;
+    height: 4px;
+    border: 1px solid #e1e1e1;
+    background-color: #f4f3f3;
+}
+
+.ux-select-box .selected em {
+    background-color: #3e98ff;
+}
+
+.ux-select-result span {
+    background: url("../image/ui-icons.png") no-repeat scroll right -144px transparent;
+    padding: 0 10px;
+}
+
+.ux-select-result .del-select {
+    border: none;
+    color: #0056a1;
+    margin-top: 5px;
+    display: none;
+}
+
+
+
+
+
+
+
+
