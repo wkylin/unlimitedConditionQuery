@@ -1,0 +1,6 @@
+{
+  "name": "unlimitedConditionQuery",
+  "tagline": "多条件组合查询......",
+  "body": "# unlimitedConditionQuery\r\n\r\n多条件组合查询......\r\n\r\n\r\n实现：jQuery 版本\r\n\r\n1.支持设置单选及复选条件\r\n\r\n2.支持反向选择\r\n\r\n3.支持多条件，可以后端返回数组配置\r\n\r\n4.选择结果已序列化...\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
